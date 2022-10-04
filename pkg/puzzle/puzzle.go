@@ -13,7 +13,8 @@ type Slot struct {
 
 type Piece struct {
 	ID    int
-	Shape []Position // assuming position is normalized (no neg) and ordered (by row, col)
+	Shape []Position
+	Block [][]int
 }
 
 type Position struct {
